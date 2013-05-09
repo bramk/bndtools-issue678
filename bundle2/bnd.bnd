@@ -1,0 +1,11 @@
+-buildpath: bundle1;version=latest,\
+	osgi.core
+Private-Package: bundle2.impl,\
+	bundle1.impl
+-runfw: org.apache.felix.framework;version='[4.0.3,4.0.3]'
+-runee: JavaSE-1.6
+-runbundles: bundle1;version=latest,\
+	org.apache.felix.gogo.command,\
+	org.apache.felix.gogo.runtime,\
+	org.apache.felix.gogo.shell
+Bundle-Activator: bundle2.impl.Bundle2Implementation
